@@ -13,6 +13,17 @@
         android:text="Daftar Lagu Taylor Swift"
         android:textSize="20sp"
         android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Tulis lagu Taylor favoritmu..."
+        android:textColorHint="#F7A8B8"
+        android:backgroundTint="#E8638B"
+        android:inputType="text"
+        android:textColor="#E8638B" />
 
     <Button
         android:id="@+id/btnPlay"
