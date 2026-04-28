@@ -4,22 +4,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#FFF9F9"
+    android:background="#121212"
     android:padding="20dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dina is listening to:"
-        android:textColor="#E8638B"
-        android:textSize="18sp" />
+        android:text="Now Playing"
+        android:textColor="#AAAAAA"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/tvNamaLagu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Judul Lagu"
-        android:textColor="#D4ADFC"
+        android:textColor="#1DB954"
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_marginTop="10dp" />

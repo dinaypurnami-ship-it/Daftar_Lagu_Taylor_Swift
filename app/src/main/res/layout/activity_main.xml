@@ -1,34 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#121212">
 
-    <TextView
-        android:id="@+id/tvJudul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Daftar Lagu Taylor Swift"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
-    <EditText
-        android:id="@+id/etSearch"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:hint="Tulis lagu Taylor favoritmu..."
-        android:textColorHint="#F7A8B8"
-        android:backgroundTint="#E8638B"
-        android:inputType="text"
-        android:textColor="#E8638B" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnPlay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Play Lagu"/>
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Evening"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:hint="Cari lagu..."
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/bg_search"/>
+
+        <TextView
+            android:text="Rekomendasi Untukmu"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- ALBUM 1 -->
+                <LinearLayout
+                    android:id="@+id/cardFearless"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:text="Fearless"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="Taylor Swift"
+                        android:textColor="#CCCCCC"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <!-- ALBUM 2 -->
+                <LinearLayout
+                    android:id="@+id/card1989"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:text="1989"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="Taylor Swift"
+                        android:textColor="#CCCCCC"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <!-- ALBUM 3 -->
+                <LinearLayout
+                    android:id="@+id/cardLover"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:text="Lover"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="Taylor Swift"
+                        android:textColor="#CCCCCC"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Cari Lagu"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1DB954"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
