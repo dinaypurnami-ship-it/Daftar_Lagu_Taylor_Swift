@@ -1,27 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/black"
     android:gravity="center"
-    android:background="#121212"
-    android:padding="20dp">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Now Playing"
-        android:textColor="#AAAAAA"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/tvNamaLagu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Judul Lagu"
-        android:textColor="#1DB954"
+        android:id="@+id/txtSongTitle"
+        android:text="Anti-Hero"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp" />
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:text="Play"
+        android:backgroundTint="@color/card"
+        android:textColor="@color/white"/>
 
 </LinearLayout>

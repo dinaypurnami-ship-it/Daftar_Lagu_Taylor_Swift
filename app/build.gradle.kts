@@ -4,10 +4,10 @@ plugins {
 
 android {
     namespace = "com.example.daftar_lagu_taylor_swift"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
+    compileSdk = 34
+
+    buildFeatures {
+        viewBinding = true
     }
 
     defaultConfig {
@@ -19,6 +19,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
+
 
     buildTypes {
         release {

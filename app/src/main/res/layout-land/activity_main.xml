@@ -1,37 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:background="#121212"
+    android:background="@color/black"
+    android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent">
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Albums"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
 
-        <TextView
-            android:text="Search Lagu"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+    <!-- GRID STYLE -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
 
-        <EditText
-            android:id="@+id/etSearch"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Cari lagu..."
-            android:textColor="#FFFFFF"
-            android:textColorHint="#AAAAAA"
-            android:background="@drawable/bg_search"/>
+        <!-- CARD 1 -->
+        <LinearLayout
+            android:id="@+id/cardMidnights"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnPlay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cari"/>
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Midnights"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- CARD 2 -->
+        <LinearLayout
+            android:id="@+id/cardLover"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lover"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </GridLayout>
 
 </LinearLayout>

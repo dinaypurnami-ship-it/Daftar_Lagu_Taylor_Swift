@@ -1,23 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
     android:orientation="vertical"
-    android:background="#121212"
     android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvAlbum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Album"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp"
-        android:textStyle="bold"/>
+        android:id="@+id/txtAlbumTitle"
+        android:text="Midnights"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
 
-    <ListView
-        android:id="@+id/listLagu"
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="12dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/song1"
+            android:text="Anti-Hero"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/song2"
+            android:text="Lavender Haze"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/song3"
+            android:text="Snow On The Beach"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
