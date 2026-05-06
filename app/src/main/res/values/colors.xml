@@ -1,5 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#121212</color>
+    <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="card">#1E1E1E</color>
+
+    <!-- Pink Soft Theme -->
+    <color name="spotify_black">#171015</color>
+    <color name="spotify_dark">#22151D</color>
+    <color name="spotify_card">#321E2A</color>
+    <color name="spotify_card_green">#3A2030</color>
+    <color name="spotify_green">#F7A8C8</color>
+    <color name="spotify_green_dark">#E58CB1</color>
+    <color name="spotify_text_gray">#E8C9D8</color>
+    <color name="spotify_stroke">#F7A8C8</color>
 </resources>

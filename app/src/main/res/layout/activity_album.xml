@@ -1,119 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7E8F0"
-    android:padding="20dp">
+    android:background="@color/spotify_black"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="22dp">
 
         <TextView
             android:id="@+id/txtAlbumTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Album"
-            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
             android:textStyle="bold"
-            android:textColor="#3B2C35"
-            android:gravity="center"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Taylor Swift Playlist"
+            android:textColor="@color/spotify_green"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:layout_marginBottom="20dp" />
-
-        <EditText
-            android:id="@+id/edtSearch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Cari lagu..."
-            android:padding="12dp"
-            android:background="#FFFFFF"
-            android:layout_marginBottom="12dp" />
-
-        <Button
-            android:id="@+id/btnSearch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cari Lagu"
-            android:layout_marginBottom="12dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="20dp">
+            android:orientation="vertical"
+            android:background="@drawable/bg_spotify_card"
+            android:padding="16dp"
+            android:layout_marginBottom="22dp">
 
-            <Button
-                android:id="@+id/btnSortAz"
-                android:layout_width="0dp"
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="A-Z"
-                android:layout_marginEnd="6dp" />
+                android:background="@drawable/bg_spotify_search"
+                android:hint="Search song..."
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/spotify_text_gray"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="14dp"
+                android:layout_marginBottom="12dp" />
 
-            <Button
-                android:id="@+id/btnSortZa"
-                android:layout_width="0dp"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Z-A"
-                android:layout_marginStart="6dp" />
+                android:background="@drawable/bg_spotify_green"
+                android:text="Search"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                app:backgroundTint="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSortAz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spotify_green"
+                    android:text="A-Z"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:padding="12dp"
+                    android:layout_marginEnd="6dp"
+                    app:backgroundTint="@null" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSortZa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spotify_green"
+                    android:text="Z-A"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:padding="12dp"
+                    android:layout_marginStart="6dp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Songs"
+            android:textColor="@android:color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
 
         <TextView
             android:id="@+id/song1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Song 1"
-            android:textSize="18sp"
-            android:textColor="#3B2C35"
-            android:background="#FFFFFF"
+            android:background="@drawable/bg_spotify_card_light"
             android:padding="16dp"
+            android:text="Song 1"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
             android:layout_marginBottom="10dp" />
 
         <TextView
             android:id="@+id/song2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Song 2"
-            android:textSize="18sp"
-            android:textColor="#3B2C35"
-            android:background="#FFFFFF"
+            android:background="@drawable/bg_spotify_card_light"
             android:padding="16dp"
+            android:text="Song 2"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
             android:layout_marginBottom="10dp" />
 
         <TextView
             android:id="@+id/song3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Song 3"
-            android:textSize="18sp"
-            android:textColor="#3B2C35"
-            android:background="#FFFFFF"
+            android:background="@drawable/bg_spotify_card_light"
             android:padding="16dp"
+            android:text="Song 3"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
             android:layout_marginBottom="10dp" />
 
         <TextView
             android:id="@+id/song4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Song 4"
-            android:textSize="18sp"
-            android:textColor="#3B2C35"
-            android:background="#FFFFFF"
+            android:background="@drawable/bg_spotify_card_light"
             android:padding="16dp"
+            android:text="Song 4"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
             android:layout_marginBottom="10dp" />
 
         <TextView
             android:id="@+id/song5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Song 5"
-            android:textSize="18sp"
-            android:textColor="#3B2C35"
-            android:background="#FFFFFF"
+            android:background="@drawable/bg_spotify_card_light"
             android:padding="16dp"
+            android:text="Song 5"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
             android:layout_marginBottom="10dp" />
 
     </LinearLayout>

@@ -1,59 +1,72 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/black"
-    android:orientation="vertical"
-    android:padding="16dp"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/spotify_black"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Popular Albums"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="12dp"/>
-
-    <HorizontalScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good Evening"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
 
-            <LinearLayout
-                android:id="@+id/cardMidnights"
-                android:layout_marginEnd="12dp"
-                android:background="@drawable/bg_card"
-                android:padding="16dp"
-                android:layout_width="160dp"
-                android:layout_height="180dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Taylor Swift Albums"
+            android:textColor="@color/spotify_green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Midnights"
-                    android:textColor="@color/white"/>
-            </LinearLayout>
+        <TextView
+            android:id="@+id/cardMidnights"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/bg_spotify_card"
+            android:gravity="center_vertical"
+            android:padding="22dp"
+            android:text="Midnights\nTaylor Swift"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="16dp" />
 
-            <LinearLayout
-                android:id="@+id/cardLover"
-                android:layout_marginEnd="12dp"
-                android:background="@drawable/bg_card"
-                android:padding="16dp"
-                android:layout_width="160dp"
-                android:layout_height="180dp">
+        <TextView
+            android:id="@+id/cardLover"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:background="@drawable/bg_spotify_card"
+            android:gravity="center_vertical"
+            android:padding="22dp"
+            android:text="Lover\nTaylor Swift"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="24dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lover"
-                    android:textColor="@color/white"/>
-            </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap an album to view the song list"
+            android:textColor="@color/spotify_text_gray"
+            android:textSize="14sp"
+            android:gravity="center" />
 
-        </LinearLayout>
-    </HorizontalScrollView>
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

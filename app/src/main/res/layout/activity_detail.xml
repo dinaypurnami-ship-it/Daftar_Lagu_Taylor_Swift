@@ -1,28 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/black"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="16dp"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/spotify_black"
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/txtSongTitle"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Anti-Hero"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginBottom="20dp" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <Button
-        android:id="@+id/btnPlay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play"
-        android:backgroundTint="@color/card"
-        android:textColor="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/bg_spotify_green"
+            android:gravity="center"
+            android:text="♪"
+            android:textColor="@android:color/black"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/txtSongTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song Title"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Taylor Swift"
+            android:textColor="@color/spotify_green"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spotify_card"
+            android:padding="18dp"
+            android:text="Now viewing song detail. This page receives song data using Intent from AlbumActivity."
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>
