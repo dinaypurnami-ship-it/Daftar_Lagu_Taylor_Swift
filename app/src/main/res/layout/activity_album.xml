@@ -1,82 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:background="#F7E8F0"
+    android:padding="20dp">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/txtAlbumTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Midnights"
-            android:textSize="26sp"
+            android:text="Album"
+            android:textSize="28sp"
             android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_marginBottom="16dp" />
+            android:textColor="#3B2C35"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
 
         <EditText
             android:id="@+id/edtSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Masukkan nama lagu"
-            android:inputType="text"
-            android:singleLine="true"
-            android:textColor="@color/white"
-            android:textColorHint="#BDBDBD"
+            android:hint="Cari lagu..."
             android:padding="12dp"
-            android:layout_marginBottom="8dp" />
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp" />
 
         <Button
             android:id="@+id/btnSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cek Input"
-            android:backgroundTint="@color/card"
-            android:textColor="@color/white"
-            android:layout_marginBottom="16dp" />
+            android:text="Cari Lagu"
+            android:layout_marginBottom="12dp" />
 
         <LinearLayout
-            android:orientation="vertical"
-            android:background="@drawable/bg_card"
-            android:padding="12dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
 
-            <TextView
-                android:id="@+id/song1"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/btnSortAz"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Anti-Hero"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:padding="10dp" />
+                android:layout_weight="1"
+                android:text="A-Z"
+                android:layout_marginEnd="6dp" />
 
-            <TextView
-                android:id="@+id/song2"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/btnSortZa"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Lavender Haze"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:padding="10dp" />
-
-            <TextView
-                android:id="@+id/song3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Snow On The Beach"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:padding="10dp" />
+                android:layout_weight="1"
+                android:text="Z-A"
+                android:layout_marginStart="6dp" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/song1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song 1"
+            android:textSize="18sp"
+            android:textColor="#3B2C35"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/song2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song 2"
+            android:textSize="18sp"
+            android:textColor="#3B2C35"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/song3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song 3"
+            android:textSize="18sp"
+            android:textColor="#3B2C35"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/song4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song 4"
+            android:textSize="18sp"
+            android:textColor="#3B2C35"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/song5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song 5"
+            android:textSize="18sp"
+            android:textColor="#3B2C35"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp" />
 
     </LinearLayout>
 
