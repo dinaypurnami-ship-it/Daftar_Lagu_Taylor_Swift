@@ -16,10 +16,13 @@
 
         <TextView
             android:id="@+id/txtSongTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Anti-Hero"
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="@color/white"/>
+
     </LinearLayout>
 
     <!-- KANAN -->
@@ -31,6 +34,8 @@
         android:layout_height="match_parent">
 
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Play"
             android:backgroundTint="@color/card"
             android:textColor="@color/white"/>
