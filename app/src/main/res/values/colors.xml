@@ -12,4 +12,6 @@
     <color name="spotify_green_dark">#E58CB1</color>
     <color name="spotify_text_gray">#E8C9D8</color>
     <color name="spotify_stroke">#F7A8C8</color>
+    <color name="spotify_card_2">#282828</color>
+    <color name="card">#1DB954</color>
 </resources>

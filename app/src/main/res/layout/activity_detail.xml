@@ -48,7 +48,17 @@
             android:padding="18dp"
             android:text="Now viewing song detail. This page receives song data using Intent from AlbumActivity."
             android:textColor="@android:color/white"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Song"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/spotify_green"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

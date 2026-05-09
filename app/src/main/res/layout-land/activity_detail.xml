@@ -12,7 +12,7 @@
         android:padding="24dp">
 
         <TextView
-            android:layout_width="220dp"
+            android:layout_width="match_parent"
             android:layout_height="220dp"
             android:background="@drawable/bg_spotify_green"
             android:gravity="center"
@@ -20,44 +20,45 @@
             android:textColor="@android:color/black"
             android:textSize="80sp"
             android:textStyle="bold"
-            android:layout_marginEnd="24dp" />
+            android:layout_marginBottom="24dp" />
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/txtSongTitle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center_vertical">
+            android:text="Song Title"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
 
-            <TextView
-                android:id="@+id/txtSongTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Song Title"
-                android:textColor="@android:color/white"
-                android:textSize="34sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Taylor Swift"
+            android:textColor="@color/spotify_green"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Taylor Swift"
-                android:textColor="@color/spotify_green"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spotify_card"
+            android:padding="18dp"
+            android:text="Now viewing song detail. This page receives song data using Intent from AlbumActivity."
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="24dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_spotify_card"
-                android:padding="18dp"
-                android:text="Now viewing song detail. This page receives song data using Intent from AlbumActivity."
-                android:textColor="@android:color/white"
-                android:textSize="15sp" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Song"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/spotify_green"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
